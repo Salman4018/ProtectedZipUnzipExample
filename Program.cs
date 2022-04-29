@@ -1,19 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-using Ionic.Zip;
+﻿using Ionic.Zip;
 
 const string zippedFilePath = @"C:\Users\salmam\Downloads\MyFile.Zip";
 const string filePathToBeZipped = @"C:\Users\salmam\Downloads\static-web-blazor-func-2020-11-20.pdf";
 const string directoryInZippedFolder = "Files";
 const string extractedZippedFolderPath = @"C:\Users\salmam\Downloads\MyFile";
 
-CreateZip();
-UnZip();
+CreateProtectedZip();
+ExtractProtectedZip();
 
 
 
-void CreateZip()
+void CreateProtectedZip()
 {
     try
     {
@@ -30,7 +27,7 @@ void CreateZip()
     }
 }
 
-void UnZip()
+void ExtractProtectedZip()
 {
     try
     {
